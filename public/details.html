@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Pilot Invoice Reports</title>
+  <link rel="stylesheet" href="/stylesheets/details.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascripts/details.js" type="module"></script>
+</head>
+
+<body>
+  <h1>Crew invoicing</h1>
+  <div class="table-wrapper">
+    <table class="invoice-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>Activity</th>
+          <th>Actual Base</th>
+          <th>Daily</th>
+          <th>BLH (Decimal)</th>
+          <th>BLH</th>
+          <th>STBY</th>
+          <th>OR</th>
+          <th>GC</th>
+          <th>UPL</th>
+          <th>Sick</th>
+          <th>LT</th>
+          <th>Proj.</th>
+          <th>Total</th>
+        </tr>
+      </thead>
+      <tbody id="invoice-table-details-body">
+      <tbody>
+    </table>
+  </div>
+  <div id="invoice-approval" hidden>
+    <button id="button-approve">Approve</button>
+    <button id="button-reject">Reject</button>
+    <input id="input-comment" type="text">
+  </div>
+</body>
+</html>
