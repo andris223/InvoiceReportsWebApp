@@ -14,7 +14,6 @@ $(document).ready(function () {
         method: 'GET',
         dataType: 'json',
         success: function (data) {
-            //var invoiceArray = Array.from(data.activities);
             (function removeNull(invoices) {
                 for (var key in invoices) {
                     if (null === invoices[key]) invoices[key] = '-';
