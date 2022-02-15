@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    function getData() {
         jQuery.ajax({
 
             url: 'https://invoicingtesttask.azurewebsites.net/Invoices',
@@ -22,7 +21,5 @@ $(document).ready(function () {
                 console.log(status + '; ' + error);
             }
         });
-    }
-    getData();
 });
 
